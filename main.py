@@ -14,9 +14,11 @@ def main():
     dt = 0
 
     while True: 
+        player.update(dt)
         screen.fill("black")
         player.draw(screen)
         pygame.display.flip()
+       
          
 
         log_state()
